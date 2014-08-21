@@ -26,7 +26,7 @@ def isPrime(num):						# works for all primes except 2...
 		return False
 
 def findPrime(limit):
-	count = 1
+	count = 1 							# because isPrime(2) is False
 	check = 2
 	while count < limit:
 		TF = isPrime(check)
