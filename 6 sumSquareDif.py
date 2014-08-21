@@ -37,3 +37,4 @@ squareSums(10)
 b = squareSums(100)
 
 print(b-a)
+
