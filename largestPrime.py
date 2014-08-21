@@ -25,11 +25,11 @@ def listFactors(n):
 	listb = []
 	root = n ** (0.5)
 	upper = int(math.ceil(root))
-	for a in range(2, upper):
-		if n % a == 0:
-			b = n / a
-			lista.append(a)
-			listb.append(b)
+	for factor in range(2, upper):
+		if n % factor == 0:
+			factor2 = n / factor
+			lista.append(factor)
+			listb.append(factor2)
 	answer = lista + listb[::-1]
 	# print(answer)
 	return answer

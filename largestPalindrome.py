@@ -17,12 +17,12 @@ def checkPal(n):
 
 L = []
 
-for n in range(100, 1000):
-	for a in range(100,1000):
-		b = n * a
-		c = checkPal(b)
-		if c is True:
-			L.append(b)
+for first in range(100, 1000):
+	for second in range(100,1000):
+		product = first * second
+		check = checkPal(product)
+		if check is True:
+			L.append(product)
 			break
 
 print(L)
